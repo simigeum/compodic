@@ -1,0 +1,2 @@
+# compodic
+component + dictionary
