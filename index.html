@@ -11,5 +11,72 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+    <div class="gnb-search-box">
+        <form>
+            <div class="gnb-search-input">
+                <input type="text" class="input_txt">
+                <button type="button" class="gnb-search-button">
+                    <i class="icon-search"></i>
+                    <span class="hide">검색</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- 자동완성 영역 -->
+    <div class="gnb-search-word">
+        <div class="key-word-renew">
+            <div class="recent-list">
+                <div class="tit-area">
+                    <strong>최근검색어</strong>
+                </div>
+                <div class="result-area">
+                    <ul id="recent-search">
+                        <li>룰루레몬 요가매트</li>
+                    </ul>
+                    <div class="result-clear">
+                        <button type="button" class="clear-button" id="button-late-clear">
+                            <span>검색어 전체 삭제</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- NOTE: 최근검색어가 없을 경우 .nodata는 display:block / .result_area는 display:none -->
+                <div class="nodata" id="late-nodata">
+                    <p>최근검색어가 없습니다</p>
+                </div>
+            </div>
+        </div>
+         <!-- NOTE: 광고가 보이는 상태일때 .auto-word에 .ad-showing 클래스 추가-->
+         <div class="auto-word renew" id="gnb-auto-word">
+            <div id="gnb-shortcut-target" class="word-shortcut">
+                <a href="#">
+                    <span class="cmicon"><i class="icon-market"></i></span>
+                    <strong>룰루레몬 공식브랜드관</strong> 
+                    <em>바로가기</em>
+                    <div class="word-shortcut-arrow">
+                        <span class="cmicon">
+                            <i class="icon-chevron-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="word-list notranslate" id="gnb-word-list">
+                <ul id="gnb-auto-list">
+                    <li>
+                        <a href="#" title="룰루레몬">
+                            <strong>룰</strong>루레몬
+                            <em class="word-date">1.21</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="룰루레몬">
+                            <strong>룰</strong>루레몬 남성 50
+                            <em class="word_date"></em>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
